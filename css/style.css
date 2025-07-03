@@ -1,0 +1,101 @@
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #ffffff;
+  margin: 0;
+  color: #333;
+}
+
+.navbar {
+  background-color: #ffffff;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
+}
+
+.navbar-brand {
+  font-weight: 600;
+  font-size: 1.25rem;
+  color: #222 !important;
+}
+
+.navbar-nav .nav-link {
+  color: #555;
+  margin-left: 1rem;
+  transition: color 0.2s ease;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+  color: #000;
+}
+
+#hero {
+  background-color: #f8f9fa;
+  padding: 5rem 0;
+  text-align: center;
+}
+
+#hero h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+#hero p {
+  font-size: 1rem;
+  color: #666;
+}
+
+.custom-img {
+  max-width: 100%;
+  border-radius: 1rem;
+  box-shadow: none;
+  transition: transform 0.3s ease;
+}
+
+.custom-img:hover {
+  transform: scale(1.02);
+}
+
+section h2 {
+  font-weight: 600;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+section p {
+  font-size: 1rem;
+  color: #444;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+footer {
+  background-color: #f1f1f1;
+  color: #555;
+  font-size: 0.85rem;
+  padding: 2rem 0;
+}
+.project-img {
+    border-radius: 0.75rem;
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+  }
+
+  .project-img:hover {
+    transform: scale(1.02);
+  }
+  .card-img-top {
+    border-radius: 0.5rem 0.5rem 0 0;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .card-title {
+    font-weight: 600;
+  }
+  
+  .card-text {
+    color: #555;
+    font-size: 0.95rem;
+  }
+  
