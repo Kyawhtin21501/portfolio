@@ -3,13 +3,12 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>ポートフォリオ | HTIN AI</title>
+  <title>Kyaw Htin Hein の自己紹介</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" />
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
 
-  <!-- Glassmorphism ナビゲーション -->
   <nav class="glass-navbar">
     <div class="glass-navbar-inner container">
       <a href="#hero" class="brand">HTIN AI</a>
@@ -23,25 +22,33 @@
     </div>
   </nav>
 
-  <!-- ヒーローセクション -->
   <header id="hero" class="container text-center my-5 pt-5">
-    <img src="image/ChatGPT Image Jul 3, 2025 at 02_26_12 PM.png" class="rounded custom-img" alt="ヒーロービジュアル" />
+    <img src="image/final_main.png" class="rounded custom-img" alt="ヒーロービジュアル" />
   </header>
 
-  <!-- 自己紹介セクション -->
-  <section class="container text-center floating-animate" id="about">
-    <h2>自己紹介</h2>
-    <p>私は AI×Web 開発を専門とするフルスタック志向の開発者です。UI/UX 設計から AI モデル組込まで一貫して対応できます。</p>
-    <p>予測 AI アプリや観光 Web サービスなど、多様なプロジェクトを掲載中。</p>
+  <section class="container py-5 floating-animate" id="about">
+    <h2 class="text-center mb-4">自己紹介</h2>
+    <div class="row align-items-center text-start">
+      <div class="col-md-4 text-center mb-3 mb-md-0">
+        <a href="https://www.ccmc.ac.jp/" target="_blank">
+          <img src="image/315.jpeg" alt="中央情報専門学校 校舎" style="max-width: 100%; height: auto; border-radius: 10px; box-shadow: 0 4px 12px rgba(0,255,224,0.15);" />
+          <p class="mt-2" style="font-size: 0.9rem;">中央情報専門学校</p>
+        </a>
+      </div>
+      <div class="col-md-8">
+        <p>私は、AI と Web 技術を組み合わせたソリューション開発に注力しているフルスタック志向のエンジニアです。現在は <strong>中央情報専門学校</strong> にて、機械学習・統計モデリング・ソフトウェア開発を学んでいます。</p>
+        <p>HTML / CSS / JavaScript を用いた UI 実装や、Python（Flask, scikit-learn）による API 開発も手がけています。</p>
+        <p>AI を活用した業務支援アプリ、観光ガイドサービス、UI/UX を意識したミニアプリなど、実践的なプロジェクトに取り組んできました。</p>
+        <p>今後は AI の社会実装と Web 開発の融合をさらに深め、ユーザーにとって意味のある体験を提供していきたいと考えています。</p>
+      </div>
+    </div>
   </section>
 
-  <!-- プロジェクト一覧 -->
   <section class="container my-5" id="projects">
     <h2 class="text-center mb-4">プロジェクト一覧</h2>
     <div class="row g-4">
-      <!-- 各カード -->
       <div class="col-md-4 floating-animate">
-        <div class="card project-card h-100" data-title="飲食店AI予測" data-description="来客数・売上・シフト人数を AI で予測する Web アプリ。Flask + scikit‑learn で構築。">
+        <div class="card project-card h-100" data-title="飲食店AI予測" data-description="XGBoost や線形回帰を用いて来客数・売上を予測し、それをもとにシフトを自動作成するアプリ。Flutter + Python（Flask）で構築。">
           <img src="image/phtoto4.png" class="card-img-top" alt="AI 飲食アプリ" />
           <div class="card-body">
             <h5 class="card-title">飲食店 AI 予測</h5>
@@ -59,7 +66,7 @@
         </div>
       </div>
       <div class="col-md-4 floating-animate">
-        <div class="card project-card h-100" data-title="埼玉旅行ナビ" data-description="React ベースで埼玉の観光地を紹介・レコメンドする Web サービス。">
+        <div class="card project-card h-100" data-title="埼玉旅行ナビ" data-description="作成中">
           <img src="image/photo3.png" class="card-img-top" alt="埼玉観光ガイド" />
           <div class="card-body">
             <h5 class="card-title">埼玉旅行ナビ</h5>
@@ -70,7 +77,6 @@
     </div>
   </section>
 
-  <!-- モーダル（カードクリックで表示） -->
   <div id="projectModal" class="project-modal">
     <div class="modal-content">
       <span class="close-btn">&times;</span>
@@ -79,7 +85,6 @@
     </div>
   </div>
 
-  <!-- フッター（フォーム付き＋アニメーション） -->
   <footer class="text-center" id="contact">
     <h4 class="mb-3">お問い合わせ</h4>
     <form class="container" style="max-width: 600px;">
@@ -88,18 +93,16 @@
       <div class="mb-3 text-start"><label for="message">メッセージ</label><textarea class="form-control" id="message" rows="4" placeholder="内容をご記入ください"></textarea></div>
       <button type="submit" class="btn btn-outline-light">送信</button>
     </form>
-    <p class="mt-4 text-muted">Made with ❤️ by HTIN AI</p>
+    <p class="mt-4 text-muted" style="color: #E0E0E0;">Made with ❤️ by チョーティンヒイン</p>
   </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
   <script>
-    // IntersectionObserver で要素表示時にアニメーション
     const observer = new IntersectionObserver(entries => {
       entries.forEach(e => e.isIntersecting && e.target.classList.add("show"));
     }, { threshold: 0.15 });
     document.querySelectorAll('.floating-animate').forEach(el => observer.observe(el));
 
-    // モーダル機能
     document.querySelectorAll('.project-card').forEach(card => {
       card.addEventListener('click', () => {
         document.getElementById('modalTitle').textContent = card.dataset.title;
@@ -116,12 +119,10 @@
       }
     });
 
-    // ハンバーガーメニュー
     document.getElementById('hamburger').addEventListener('click', () => {
       document.getElementById('navLinks').classList.toggle('show');
     });
 
-    // フッターアニメーション
     const footer = document.querySelector('footer');
     const fo = new IntersectionObserver(entries => {
       entries.forEach(e => e.isIntersecting && footer.classList.add('show-footer'));

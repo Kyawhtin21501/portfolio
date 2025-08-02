@@ -6,7 +6,6 @@ body {
   color: #E0E0E0;
 }
 
-/* Glassmorphism Navbar */
 .glass-navbar {
   position: fixed; top: 20px; left: 50%;
   transform: translateX(-50%);
@@ -58,7 +57,6 @@ body {
   transform: translateX(-50%) scaleX(1);
 }
 
-/* Hamburger menu */
 .hamburger {
   display: none; font-size: 1.75rem;
   color: #E0E0E0; background: none; border: none;
@@ -81,14 +79,12 @@ body {
   }
 }
 
-/* Hero image */
 #hero img.custom-img {
   width: 100%; max-width: auto;
   height: auto; border-radius: 1rem;
   box-shadow: 0 4px 20px rgba(0,0,0,0.3);
 }
 
-/* Section Titles + Text */
 section h2 {
   margin-bottom: 1rem; color: #E0E0E0;
 }
@@ -96,8 +92,6 @@ section p {
   color: #BBBBBB; font-size: 1rem;
 }
 
-/* Compact card */
-/* カード */
 .card.project-card {
   background: #1F222D;
   border-radius: 0.75rem;
@@ -137,7 +131,6 @@ section p {
   flex-grow: 1;
 }
 
-
 .project-modal {
   display: none;
   position: fixed;
@@ -146,6 +139,7 @@ section p {
   background: rgba(0,0,0,0.85);
   backdrop-filter: blur(4px);
 }
+
 .modal-content {
   background: #1F222D;
   margin: 10% auto;
@@ -156,6 +150,7 @@ section p {
   border-radius: 1rem;
   box-shadow: 0 10px 30px rgba(0,255,224,0.08);
 }
+
 .close-btn {
   float: right;
   font-size: 1.5rem;
@@ -163,36 +158,28 @@ section p {
   color: #AAA;
   transition: color 0.2s;
 }
-.close-btn:hover { color: #00FFE0; }
 
+.close-btn:hover {
+  color: #00FFE0;
+}
 
-/* スクロールアニメーション */
 .floating-animate {
   opacity: 0;
   transform: translateY(40px);
   transition: all 0.8s ease-out;
 }
+
 .floating-animate.show {
   opacity: 1;
   transform: translateY(0);
 }
 
-
-/* Footer animation */
 footer {
   background: #1C1F2A; padding: 2rem 1rem;
   color: #AAA; opacity: 0; transform: translateY(50px);
   transition: all 1s ease;
 }
-footer.show-footer {
-  opacity: 1; transform: translateY(0);
-}
 
-/* Intersection Observer reveal */
-.floating-animate {
-  opacity: 0; transform: translateY(40px);
-  transition: all 0.8s ease-out;
-}
-.floating-animate.show {
+footer.show-footer {
   opacity: 1; transform: translateY(0);
 }
