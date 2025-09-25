@@ -183,17 +183,7 @@ footer {
 footer.show-footer {
   opacity: 1; transform: translateY(0);
 }
-.skill-card {
-  border-radius: 20px;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  background: rgba(255, 255, 255, 0.8);
-  backdrop-filter: blur(8px);
-}
-
-.skill-card:hover {
-  transform: translateY(-10px) scale(1.05);
-  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
-}
+ßß
 
 .skill-icon {
   width: 60px;
