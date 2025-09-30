@@ -80,9 +80,13 @@ body {
 }
 
 #hero img.custom-img {
-  width: 100%; max-width: auto;
-  height: auto; border-radius: 1rem;
-  box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+  width: 100%;
+  max-width: auto;
+  /* Add max-height to constrain its vertical size */
+  max-height: 1000px; /* Adjust this value (e.g., 300px, 50vh, etc.) as needed */
+  height: auto;
+  border-radius: 1rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
 }
 
 section h2 {
